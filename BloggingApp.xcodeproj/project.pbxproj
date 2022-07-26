@@ -11,6 +11,10 @@
 		A51159BE288D91AB00A06FE9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A51159BD288D91AB00A06FE9 /* GoogleService-Info.plist */; };
 		A51159C0288D99B200A06FE9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51159BF288D99B200A06FE9 /* User.swift */; };
 		A51159C2288D99CB00A06FE9 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51159C1288D99CB00A06FE9 /* BlogPost.swift */; };
+		A54F8694288EA60000C2B2E5 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F8693288EA60000C2B2E5 /* PayWallViewController.swift */; };
+		A54F8697288EF2B200C2B2E5 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F8696288EF2B200C2B2E5 /* PayWallHeaderView.swift */; };
+		A54F8699288EF3DC00C2B2E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F8698288EF3DC00C2B2E5 /* Extensions.swift */; };
+		A54F869B288FE1DF00C2B2E5 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F869A288FE1DF00C2B2E5 /* PayWallDescriptionView.swift */; };
 		A5D80F49288C4DA900D92B98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D80F48288C4DA900D92B98 /* AppDelegate.swift */; };
 		A5D80F4B288C4DA900D92B98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D80F4A288C4DA900D92B98 /* SceneDelegate.swift */; };
 		A5D80F4D288C4DA900D92B98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D80F4C288C4DA900D92B98 /* HomeViewController.swift */; };
@@ -32,6 +36,11 @@
 		A51159BD288D91AB00A06FE9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A51159BF288D99B200A06FE9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A51159C1288D99CB00A06FE9 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		A54F8693288EA60000C2B2E5 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		A54F8695288EADCD00C2B2E5 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		A54F8696288EF2B200C2B2E5 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		A54F8698288EF3DC00C2B2E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A54F869A288FE1DF00C2B2E5 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		A5D80F45288C4DA900D92B98 /* BloggingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloggingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D80F48288C4DA900D92B98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D80F4A288C4DA900D92B98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +92,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A54F8692288EA5CC00C2B2E5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A54F8693288EA60000C2B2E5 /* PayWallViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		A5D80F3C288C4DA900D92B98 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +143,7 @@
 		A5D80F5D288C4EC900D92B98 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A54F8692288EA5CC00C2B2E5 /* Other */,
 				A5D80F77288C527900D92B98 /* Posts */,
 				A5D80F76288C526700D92B98 /* Auth */,
 				A5D80F75288C500C00D92B98 /* Core Tabs */,
@@ -140,6 +158,7 @@
 				A51159BD288D91AB00A06FE9 /* GoogleService-Info.plist */,
 				A5D80F48288C4DA900D92B98 /* AppDelegate.swift */,
 				A5D80F4A288C4DA900D92B98 /* SceneDelegate.swift */,
+				A54F8698288EF3DC00C2B2E5 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -159,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				A5D80F53288C4DAA00D92B98 /* LaunchScreen.storyboard */,
+				A54F8696288EF2B200C2B2E5 /* PayWallHeaderView.swift */,
+				A54F869A288FE1DF00C2B2E5 /* PayWallDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +190,7 @@
 				A5D80F4C288C4DA900D92B98 /* HomeViewController.swift */,
 				A5D80F61288C4F2B00D92B98 /* ProfileViewController.swift */,
 				A5D80F63288C4F4700D92B98 /* TabBarViewController.swift */,
+				A54F8695288EADCD00C2B2E5 /* Configuration.storekit */,
 			);
 			path = "Core Tabs";
 			sourceTree = "<group>";
@@ -307,10 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51159C2288D99CB00A06FE9 /* BlogPost.swift in Sources */,
+				A54F869B288FE1DF00C2B2E5 /* PayWallDescriptionView.swift in Sources */,
+				A54F8699288EF3DC00C2B2E5 /* Extensions.swift in Sources */,
 				A5D80F4D288C4DA900D92B98 /* HomeViewController.swift in Sources */,
 				A5D80F72288C4FF700D92B98 /* AuthManager.swift in Sources */,
 				A5D80F70288C4FE800D92B98 /* DatabaseManager.swift in Sources */,
 				A5D80F68288C4F7600D92B98 /* SignUpViewController.swift in Sources */,
+				A54F8697288EF2B200C2B2E5 /* PayWallHeaderView.swift in Sources */,
 				A5D80F49288C4DA900D92B98 /* AppDelegate.swift in Sources */,
 				A5D80F66288C4F6900D92B98 /* SignInViewController.swift in Sources */,
 				A51159C0288D99B200A06FE9 /* User.swift in Sources */,
@@ -321,6 +346,7 @@
 				A5D80F64288C4F4700D92B98 /* TabBarViewController.swift in Sources */,
 				A5D80F4B288C4DA900D92B98 /* SceneDelegate.swift in Sources */,
 				A5D80F74288C500400D92B98 /* StorageManager.swift in Sources */,
+				A54F8694288EA60000C2B2E5 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
